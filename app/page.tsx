@@ -5,19 +5,19 @@ export default function Home() {
         Осталось <strong>2 места</strong> в мае
       </div>
       <section className="max-w-4xl mx-auto px-6 pt-20 pb-16 text-center">
-        <span className="inline-block bg-green-100 text-green-700 text-sm font-semibold px-4 py-1 rounded-full mb-6">
+        <span className="inline-block bg-emerald-100 text-yellow-700 text-sm font-semibold px-4 py-1 rounded-full mb-6">
           Сайты для бизнеса в Казахстане
         </span>
         <h1 className="text-5xl font-black leading-tight mb-6 tracking-tight">
           Твои конкуренты уже получают<br />
-          <span className="text-green-600">клиентов из интернета.</span><br />
+          <span className="text-yellow-600">клиентов из интернета.</span><br />
           А ты?
         </h1>
         <p className="text-xl text-gray-500 mb-10 max-w-2xl mx-auto">
           Пока у тебя нет сайта — клиенты уходят к тем у кого есть. Я сделаю тебе продающий сайт за 3 дня.
         </p>
         <a href="https://t.me/wyikai" target="_blank" rel="noreferrer"
-          className="inline-block bg-green-600 text-white text-xl font-bold px-10 py-5 rounded-2xl hover:bg-green-700 transition-colors">
+          className="inline-block bg-emerald-900 text-white text-xl font-bold px-10 py-5 rounded-2xl hover:bg-emerald-800 transition-colors">
           Написать в Telegram
         </a>
         <p className="text-gray-400 text-sm mt-4">Бесплатная консультация. Отвечаю за 30 минут.</p>
@@ -46,7 +46,7 @@ export default function Home() {
             {icon:"free",title:"Хостинг навсегда бесплатный",desc:"Сайт живёт на Vercel — это бесплатно. Ты не платишь ничего после."},
             {icon:"fix",title:"Правки без доп. оплаты",desc:"В течение 7 дней после сдачи правлю всё что не понравится."},
           ].map((item) => (
-            <div key={item.title} className="flex items-start gap-4 border border-gray-200 rounded-xl p-5 hover:border-green-300 transition-colors">
+            <div key={item.title} className="flex items-start gap-4 border border-gray-200 rounded-xl p-5 hover:border-yellow-400 transition-colors">
               <div>
                 <h3 className="font-bold text-lg mb-1">{item.title}</h3>
                 <p className="text-gray-500">{item.desc}</p>
@@ -64,15 +64,15 @@ export default function Home() {
               {name:"Бизнес",price:"100 000 тг",usd:"~$199",features:["До 5 страниц","Галерея работ","Отзывы клиентов","SEO оптимизация","Правки 14 дней"],popular:true},
               {name:"Магазин",price:"200 000 тг",usd:"~$399",features:["Каталог товаров","Корзина и оплата","Управление заказами","До 50 товаров"],popular:false},
             ].map((plan) => (
-              <div key={plan.name} className={`rounded-2xl p-6 border-2 bg-white ${plan.popular ? "border-green-500 shadow-xl" : "border-gray-200"}`}>
-                {plan.popular && <div className="bg-green-500 text-white text-xs font-bold px-3 py-1 rounded-full inline-block mb-3">ПОПУЛЯРНЫЙ</div>}
+              <div key={plan.name} className={`rounded-2xl p-6 border-2 bg-white ${plan.popular ? "border-yellow-600 shadow-xl" : "border-gray-200"}`}>
+                {plan.popular && <div className="bg-yellow-600 text-white text-xs font-bold px-3 py-1 rounded-full inline-block mb-3">ПОПУЛЯРНЫЙ</div>}
                 <h3 className="font-black text-xl mb-1">{plan.name}</h3>
                 <div className="mb-4"><span className="text-3xl font-black">{plan.price}</span><span className="text-gray-400 text-sm ml-2">{plan.usd}</span></div>
                 <ul className="space-y-2 mb-6">
-                  {plan.features.map((f) => (<li key={f} className="flex items-center gap-2 text-sm"><span className="text-green-500 font-bold">ok</span>{f}</li>))}
+                  {plan.features.map((f) => (<li key={f} className="flex items-center gap-2 text-sm"><span className="text-yellow-600 font-bold">ok</span>{f}</li>))}
                 </ul>
                 <a href="https://t.me/wyikai" target="_blank" rel="noreferrer"
-                  className={`block text-center py-3 rounded-xl font-bold transition-colors ${plan.popular ? "bg-green-600 text-white hover:bg-green-700" : "bg-gray-100 text-gray-900 hover:bg-gray-200"}`}>
+                  className={`block text-center py-3 rounded-xl font-bold transition-colors ${plan.popular ? "bg-emerald-900 text-white hover:bg-emerald-800" : "bg-gray-100 text-gray-900 hover:bg-gray-200"}`}>
                   Выбрать
                 </a>
               </div>
@@ -100,11 +100,11 @@ export default function Home() {
         </div>
       </section>
       <section className="py-24 text-center px-6">
-        <p className="text-green-600 font-semibold mb-3">Осталось 2 места в мае</p>
+        <p className="text-yellow-600 font-semibold mb-3">Осталось 2 места в мае</p>
         <h2 className="text-4xl font-black mb-4">Готов начать?</h2>
         <p className="text-gray-500 mb-10 max-w-lg mx-auto">Напиши прямо сейчас и получи бесплатную консультацию</p>
         <a href="https://t.me/wyikai" target="_blank" rel="noreferrer"
-          className="inline-block bg-green-600 text-white text-xl font-bold px-10 py-5 rounded-2xl hover:bg-green-700 transition-colors">
+          className="inline-block bg-emerald-900 text-white text-xl font-bold px-10 py-5 rounded-2xl hover:bg-emerald-800 transition-colors">
           Написать в Telegram
         </a>
         <p className="text-gray-400 text-sm mt-4">Отвечаю в течение 30 минут</p>
