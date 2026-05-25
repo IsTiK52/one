@@ -11,7 +11,7 @@ export default function Home() {
         <p className="text-xl text-gray-500 mb-10 max-w-xl mx-auto">
           Лендинг, портфолио или интернет-магазин. Современный дизайн, быстрая загрузка, деплой на Vercel.
         </p>
-        <a href="https://t.me/твой_telegram" target="_blank" rel="noreferrer"
+        <a href="https://t.me/wyikai" target="_blank" rel="noreferrer"
           className="inline-block bg-black text-white text-lg font-semibold px-8 py-4 rounded-full hover:bg-gray-800 transition-colors">
           Написать и заказать
         </a>
@@ -62,7 +62,7 @@ export default function Home() {
       <section className="max-w-2xl mx-auto px-6 py-24 text-center">
         <h2 className="text-3xl font-bold mb-4">Готов начать?</h2>
         <p className="text-gray-500 mb-8">Первая консультация бесплатно</p>
-        <a href="https://t.me/твой_telegram" target="_blank" rel="noreferrer"
+        <a href="https://t.me/wyikai" target="_blank" rel="noreferrer"
           className="inline-block bg-black text-white text-lg font-semibold px-8 py-4 rounded-full hover:bg-gray-800 transition-colors">
           Написать в Telegram
         </a>
