@@ -1,7 +1,7 @@
 export default function Home() {
   return (
-    <main className="min-h-screen bg-white text-gray-900" style={{fontFamily: "system-ui, sans-serif"}}>
-      <div className="bg-black text-white text-center py-2 text-sm">
+    <main className="min-h-screen bg-stone-50 text-emerald-950" style={{fontFamily: "system-ui, sans-serif"}}>
+      <div className="bg-emerald-950 text-white text-center py-2 text-sm">
         Осталось <strong>2 места</strong> в мае
       </div>
       <section className="max-w-4xl mx-auto px-6 pt-20 pb-16 text-center">
@@ -13,23 +13,23 @@ export default function Home() {
           <span className="text-yellow-600">клиентов из интернета.</span><br />
           А ты?
         </h1>
-        <p className="text-xl text-gray-500 mb-10 max-w-2xl mx-auto">
+        <p className="text-xl text-emerald-800 mb-10 max-w-2xl mx-auto">
           Пока у тебя нет сайта — клиенты уходят к тем у кого есть. Я сделаю тебе продающий сайт за 3 дня.
         </p>
         <a href="https://t.me/wyikai" target="_blank" rel="noreferrer"
           className="inline-block bg-emerald-900 text-white text-xl font-bold px-10 py-5 rounded-2xl hover:bg-emerald-800 transition-colors">
           Написать в Telegram
         </a>
-        <p className="text-gray-400 text-sm mt-4">Бесплатная консультация. Отвечаю за 30 минут.</p>
+        <p className="text-emerald-700 text-sm mt-4">Бесплатная консультация. Отвечаю за 30 минут.</p>
       </section>
-      <section className="bg-gray-50 py-16">
+      <section className="bg-emerald-50 py-16">
         <div className="max-w-3xl mx-auto px-6">
           <h2 className="text-3xl font-black text-center mb-12">Узнаёшь себя?</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             {["Клиенты спрашивают есть ли у вас сайт — и уходят","Реклама в Instagram уже не работает как раньше","Конкуренты в топе Google, а ты нет","Нет времени разбираться как сделать сайт самому","Знакомые делали — получилось некрасиво","Не знаешь сколько это стоит"].map((item) => (
-              <div key={item} className="flex items-start gap-3 bg-white border border-red-100 rounded-xl p-4">
+              <div key={item} className="flex items-start gap-3 bg-stone-50 border border-red-100 rounded-xl p-4">
                 <span className="text-red-500 text-xl">x</span>
-                <p className="text-gray-700">{item}</p>
+                <p className="text-emerald-900">{item}</p>
               </div>
             ))}
           </div>
@@ -46,16 +46,16 @@ export default function Home() {
             {icon:"free",title:"Хостинг навсегда бесплатный",desc:"Сайт живёт на Vercel — это бесплатно. Ты не платишь ничего после."},
             {icon:"fix",title:"Правки без доп. оплаты",desc:"В течение 7 дней после сдачи правлю всё что не понравится."},
           ].map((item) => (
-            <div key={item.title} className="flex items-start gap-4 border border-gray-200 rounded-xl p-5 hover:border-yellow-400 transition-colors">
+            <div key={item.title} className="flex items-start gap-4 border border-emerald-200 rounded-xl p-5 hover:border-yellow-400 transition-colors">
               <div>
                 <h3 className="font-bold text-lg mb-1">{item.title}</h3>
-                <p className="text-gray-500">{item.desc}</p>
+                <p className="text-emerald-800">{item.desc}</p>
               </div>
             </div>
           ))}
         </div>
       </section>
-      <section className="bg-gray-50 py-16">
+      <section className="bg-emerald-50 py-16">
         <div className="max-w-4xl mx-auto px-6">
           <h2 className="text-3xl font-black text-center mb-12">Прозрачные цены</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -64,15 +64,15 @@ export default function Home() {
               {name:"Бизнес",price:"100 000 тг",usd:"~$199",features:["До 5 страниц","Галерея работ","Отзывы клиентов","SEO оптимизация","Правки 14 дней"],popular:true},
               {name:"Магазин",price:"200 000 тг",usd:"~$399",features:["Каталог товаров","Корзина и оплата","Управление заказами","До 50 товаров"],popular:false},
             ].map((plan) => (
-              <div key={plan.name} className={`rounded-2xl p-6 border-2 bg-white ${plan.popular ? "border-yellow-600 shadow-xl" : "border-gray-200"}`}>
+              <div key={plan.name} className={`rounded-2xl p-6 border-2 bg-stone-50 ${plan.popular ? "border-yellow-600 shadow-xl" : "border-emerald-200"}`}>
                 {plan.popular && <div className="bg-yellow-600 text-white text-xs font-bold px-3 py-1 rounded-full inline-block mb-3">ПОПУЛЯРНЫЙ</div>}
                 <h3 className="font-black text-xl mb-1">{plan.name}</h3>
-                <div className="mb-4"><span className="text-3xl font-black">{plan.price}</span><span className="text-gray-400 text-sm ml-2">{plan.usd}</span></div>
+                <div className="mb-4"><span className="text-3xl font-black">{plan.price}</span><span className="text-emerald-700 text-sm ml-2">{plan.usd}</span></div>
                 <ul className="space-y-2 mb-6">
                   {plan.features.map((f) => (<li key={f} className="flex items-center gap-2 text-sm"><span className="text-yellow-600 font-bold">ok</span>{f}</li>))}
                 </ul>
                 <a href="https://t.me/wyikai" target="_blank" rel="noreferrer"
-                  className={`block text-center py-3 rounded-xl font-bold transition-colors ${plan.popular ? "bg-emerald-900 text-white hover:bg-emerald-800" : "bg-gray-100 text-gray-900 hover:bg-gray-200"}`}>
+                  className={`block text-center py-3 rounded-xl font-bold transition-colors ${plan.popular ? "bg-emerald-900 text-white hover:bg-emerald-800" : "bg-emerald-100 text-emerald-950 hover:bg-gray-200"}`}>
                   Выбрать
                 </a>
               </div>
@@ -93,7 +93,7 @@ export default function Home() {
               <span className="text-5xl font-black text-green-100 w-16 shrink-0">{item.step}</span>
               <div className="pt-2">
                 <h3 className="font-bold text-xl mb-1">{item.title}</h3>
-                <p className="text-gray-500">{item.desc}</p>
+                <p className="text-emerald-800">{item.desc}</p>
               </div>
             </div>
           ))}
@@ -102,14 +102,14 @@ export default function Home() {
       <section className="py-24 text-center px-6">
         <p className="text-yellow-600 font-semibold mb-3">Осталось 2 места в мае</p>
         <h2 className="text-4xl font-black mb-4">Готов начать?</h2>
-        <p className="text-gray-500 mb-10 max-w-lg mx-auto">Напиши прямо сейчас и получи бесплатную консультацию</p>
+        <p className="text-emerald-800 mb-10 max-w-lg mx-auto">Напиши прямо сейчас и получи бесплатную консультацию</p>
         <a href="https://t.me/wyikai" target="_blank" rel="noreferrer"
           className="inline-block bg-emerald-900 text-white text-xl font-bold px-10 py-5 rounded-2xl hover:bg-emerald-800 transition-colors">
           Написать в Telegram
         </a>
-        <p className="text-gray-400 text-sm mt-4">Отвечаю в течение 30 минут</p>
+        <p className="text-emerald-700 text-sm mt-4">Отвечаю в течение 30 минут</p>
       </section>
-      <footer className="border-t border-gray-100 py-6 text-center text-gray-400 text-sm">
+      <footer className="border-t border-emerald-100 py-6 text-center text-emerald-700 text-sm">
         2026 — Сайты для бизнеса в Казахстане
       </footer>
     </main>
