@@ -69,7 +69,7 @@ export default function Home() {
                 <h3 className="font-black text-xl mb-1">{plan.name}</h3>
                 <div className="mb-4"><span className="text-3xl font-black">{plan.price}</span><span className="text-emerald-700 text-sm ml-2">{plan.usd}</span></div>
                 <ul className="space-y-2 mb-6">
-                  {plan.features.map((f) => (<li key={f} className="flex items-center gap-2 text-sm"><span className="text-yellow-600 font-bold">ok</span>{f}</li>))}
+                  {plan.features.map((f) => (<li key={f} className="flex items-center gap-2 text-sm"><span className="text-yellow-600 font-bold">✓</span>{f}</li>))}
                 </ul>
                 <a href="https://t.me/wyikai" target="_blank" rel="noreferrer"
                   className={`block text-center py-3 rounded-xl font-bold transition-colors ${plan.popular ? "bg-emerald-900 text-white hover:bg-emerald-800" : "bg-emerald-100 text-emerald-950 hover:bg-gray-200"}`}>
